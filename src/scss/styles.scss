@@ -1,0 +1,126 @@
+html,
+body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    /* background-color: blueviolet; */
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #5b0642;
+    text-decoration: none;
+}
+
+article {
+    /* background-color: greenyellow;    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 350px;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: transparent;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: transparent;
+    width: inherit;
+}
+
+h1 {
+    /* padding: 0px;
+    margin: 0px;
+    height: 0px; */
+    font-size: 10px;
+    /* color: #5b0642; */
+    color: #333;
+}
+
+button,
+input {
+    background-color: #2ee2e9;
+    font-size: 11px;
+    outline: none;
+    &:active {
+        outline: 0;
+    }
+    &:focus {
+        outline: 0;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    &::-moz-focus-inner {
+        border: 0;
+    }
+}
+
+#card-content,
+p {
+    width: inherit;
+}
+
+#card-content-author {
+    text-align: right;
+    font-size: 14px;
+}
+
+#card-content-author::before {
+    content: '- ';
+}
+
+.material-icons {
+    color: #F7C0F7;
+    position: absolute;
+    top: -60px;
+    left: -48px;
+    z-index: -10;
+}
+
+.material-icons.md-229 {
+    font-size: 229px;
+}
+
+#credit {
+    text-align: right;
+    width: inherit;
+    margin-top: 15px;
+    font-size: 9px;
+}
+
+@media (max-width: 790px) {
+    article {
+        width: 150px;
+        font-size: 12px;
+    }
+    #card-content-author {
+        font-size: 10px;
+    }
+    .material-icons {
+        top: -80px;
+    }
+}
+
+@import "bounce.scss";
