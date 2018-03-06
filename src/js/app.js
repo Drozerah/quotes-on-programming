@@ -257,8 +257,8 @@ document.addEventListener("DOMContentLoaded", function () {
         urlRoot = this.action,
         urlParamText = '?text=',
         urlParamHashtags = '&hashtags=quotes,programming,javascript',
-        relatedUrl = "&url=https%3A%2F%2Fexample.com%2F",
-        url = urlRoot + urlParamText + encodedTweetText + urlParamHashtags + relatedUrl,
+        relatedUrl = "https://quotes-on-programming.netlify.com/",
+        url = urlRoot + urlParamText + encodedTweetText + urlParamHashtags +" "+relatedUrl,
         opts   = 'status=1' +
                  ',width='  + width  +
                  ',height=' + height +
